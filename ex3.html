@@ -1,0 +1,47 @@
+<html>
+<body style="background-color: white;">
+    <h1><a href="index.html">WEB</a></h1>
+    <div>
+
+        <input type="button" value ="night" onclick="
+            var target = document.querySelector('body')
+            if(this.value === 'day'){
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value = 'night';
+                var aList = document.querySelectorAll('a');
+                var i = 0;
+                while(i<aList.length){
+                    console.log(aList[i]);
+                    aList[i].style.color = 'blue';
+                    i += 1;
+                }
+
+                
+            } else {  
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                var aList = document.querySelectorAll('a');
+                var i = 0;
+                while(i<aList.length){
+                    console.log(aList[i]);
+                    aList[i].style.color = 'powderblue';
+                    i += 1;
+                }
+                this.value = 'day';
+                
+            }
+        ">
+    </div>
+    <ol>
+        <li><a href="1 .HTML.html" target="_blank">HTML</a></li>
+        <li><a href="1 .HTML.html" target="_blank">CSS</a></li>
+        <li><a href="1 .HTML.html" target="_blank">JS</a></li>
+    </ol>
+
+    <h2 style="color:powderblue; background-color:coral">JavaScript</h2>
+    <p>
+        Compute the mean value of matrix or a list with values. In case of a multi dimensional array, the mean of the flattened array will be calculated. When dim is provided, the maximum over the selected dimension will be calculated. Parameter dim is zero-based.
+    </p>
+</body>
+</html>
